@@ -20,6 +20,29 @@ public class MainMenu {
 			}
 			case "3":
 			{
+				System.out.println("Would you like \n 1) Sort by Name \n 2) Sort by class \n 3) Sort by GPA");
+				String sortChoice = userStringInput.nextLine();
+				switch (sortChoice) 
+				{
+					case "1":
+					{
+						
+			
+					}
+					case "2":
+					{
+						System.out.println("Would you like \n 1) Sort by first period \n 2) Sort by second period \n 3) Sort by third period");
+						String classSortChoice = userStringInput.nextLine();
+						//PeriodSorter();
+						//how to i call class sorter class
+
+					}
+						
+					case "3":
+					{
+	
+					}
+
 				
 			}
 			
@@ -34,4 +57,5 @@ public class MainMenu {
 		
 	}
 
+}
 }
