@@ -69,7 +69,7 @@ import java.io.*;
 		this.grade3 = grade3;
 	}
 
-	String firstName;
+	   String firstName;
 	   String lastName;
 	   String class1;
 	   String grade1;
