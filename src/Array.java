@@ -17,7 +17,7 @@ public class Array {
 		   {
 			   counter++;
 			   
-			  roster.add(new student(file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), file.next() , file.next()));
+			  roster.add(new student(file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), 0 /*add total GPA here*/));
 		   }
 	  	}
 
