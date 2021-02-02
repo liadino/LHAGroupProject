@@ -1,4 +1,5 @@
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -31,12 +32,12 @@ public class MainMenu {
 					
 					if (Input.equals("1"))
 					{
-						
+						System.out.println("whos grade do you want to change?");
 					}
 					
 					else if (Input.equals("2"))
 					{
-						
+						System.out.println("whos schedule do you want to change ");
 					}
 					break;
 				}
@@ -44,9 +45,23 @@ public class MainMenu {
 				case "4":
 				{
 					Scanner Input = new Scanner(System.in);
-				//	String input = Input.nextLine();
+				
 					System.out.println("how do you wanto to sort \n 1) by name \n 2) by \n Gpa 3) by period");
+					if (Input.equals("1"))
+					{
+						Collections.sort(Array.roster, new NameSorter());
+					}
 					
+					else if (Input.equals("2"))
+					{
+						Collections.sort(Array.roster, new GPASorter());
+					}
+					
+					else if (Input.equals("3"))
+					{
+						Collections.sort(Array.roster, new PeriodSorter());
+					}
+					break;
 					
 				}
 			
