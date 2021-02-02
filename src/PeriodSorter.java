@@ -1,9 +1,9 @@
 
 import java.util.Comparator;
 
-public class PeriodSorter  implements Comparator<student>
+public class PeriodSorter  implements Comparator<Student>
 			 	{
-	public int compare(student s1, student s2) {
+	public int compare(Student s1, Student s2) {
 		if(MainMenu.classSortChoice == 1) 
 			return s1.getClass1().compareTo(s2.getClass1());
 		
@@ -12,10 +12,8 @@ public class PeriodSorter  implements Comparator<student>
 		
 		else 
 			return s1.getClass3().compareTo(s2.getClass3());
-		
 					
 	}
-	return s1.getClass1().compareTo(s2.getClass1());
 
 
 	}

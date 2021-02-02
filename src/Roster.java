@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Roster {
+	 int test = 1;
+
 	static ArrayList<Object> roster = new ArrayList<Object>();
 	
 	   public static void populateObjs() throws IOException
@@ -15,18 +17,18 @@ public class Roster {
 		   {
 			   counter++;
 			   
-			  roster.add(new student(file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), 0));
+			  roster.add(new Student(file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), 0));
 		   }
 	  	}
 	   public static void makeGPA()
 		{
 		for(Object s: roster) {
 			double gpa = 0; 
-			gpa += letterConverter(((student) s).getGrade1());
-			gpa += letterConverter(((student) s).getGrade2());
-			gpa += letterConverter(((student) s).getGrade3());
+			gpa += letterConverter(((Student) s).getGrade1());
+			gpa += letterConverter(((Student) s).getGrade2());
+			gpa += letterConverter(((Student) s).getGrade3());
 			gpa /= 3;
-			((student) s).setGPA((Math.round(gpa*100))/100.0);
+			((Student) s).setGPA((Math.round(gpa*100))/100.0);
 
 		}}
 	   

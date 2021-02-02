@@ -3,7 +3,7 @@ import java.io.*;
 
 
  
-  public class student
+  public class Student
 	   {
 	   
 
@@ -17,7 +17,7 @@ import java.io.*;
 	   static String grade3;
 	   double GPA;
 		   
-		   student(String fn,  String ln,  String c1,  String g1,  String c2,  String g2,  String c3,  String g3, double gpa)
+		   Student(String fn,  String ln,  String c1,  String g1,  String c2,  String g2,  String c3,  String g3, double gpa)
 		   {
 			    firstName = fn;
 			    lastName = ln;
