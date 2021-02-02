@@ -15,9 +15,9 @@ import java.io.*;
 	   static String grade2;
 	   String class3;
 	   static String grade3;
-	   int GPA;
+	   double GPA;
 		   
-		   student(String fn,  String ln,  String c1,  String g1,  String c2,  String g2,  String c3,  String g3, int gpa)
+		   student(String fn,  String ln,  String c1,  String g1,  String c2,  String g2,  String c3,  String g3, double gpa)
 		   {
 			    firstName = fn;
 			    lastName = ln;
@@ -92,11 +92,11 @@ import java.io.*;
 			public void setGrade3(String grade3) {
 				this.grade3 = grade3;
 			}
-			public int getGPA() {
+			public double getGPA() {
 				return GPA;
 			}
-			public void setGPA(int GPA) {
-				this.GPA = GPA;
+			public void setGPA(double d) {
+				this.GPA = d;
 			}
 
 	
