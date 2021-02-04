@@ -7,13 +7,13 @@ import java.io.*;
 	   {
 	   
 
-	   String firstName;
-	   String lastName;
-	   String class1;
+	   static String firstName;
+	   static String lastName;
+	   static String class1;
 	   static String grade1;
-	   String class2;
+	   static String class2;
 	   static String grade2;
-	   String class3;
+	   static String class3;
 	   static String grade3;
 	   double GPA;
 		   

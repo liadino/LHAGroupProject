@@ -1,28 +1,23 @@
 import java.io.File;
+import java.util.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Roster {
-	 int test = 1;
-
-	static ArrayList<Object> roster = new ArrayList<Object>();
 	
 	   public static void populateObjs() throws IOException
 	  	{
-		   int counter = 0;
-		   Scanner file = new Scanner( new File( "StudentList.txt" ) );
-		
-		   while(file.hasNextLine()) 
-		   {
-			   counter++;
-			   
-			  roster.add(new Student(file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), file.next() , file.next(), 0));
-		   }
+			Scanner file = new Scanner(new File ("StudentList.txt"));
+			 
+			while (file.hasNext())
+			{
+				MainMenu.roster.add(new Student(file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), 0.0));
+			}
 	  	}
 	   public static void makeGPA()
 		{
-		for(Object s: roster) {
+		for(Object s: MainMenu.roster) {
 			double gpa = 0; 
 			gpa += letterConverter(((Student) s).getGrade1());
 			gpa += letterConverter(((Student) s).getGrade2());
