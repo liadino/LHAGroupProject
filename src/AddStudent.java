@@ -59,6 +59,7 @@ public static void addingStudent() {
     npg.add(grade3);
  
     System.out.println("ArrayList : " + npg);
+    //hi
 }
 }
 
